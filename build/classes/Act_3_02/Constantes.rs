@@ -1,2 +1,0 @@
-Act_3_02.PruebaConstantes
-Act_3_02.Constantes
