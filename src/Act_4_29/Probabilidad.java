@@ -29,16 +29,12 @@ public class Probabilidad {
         }
         int total = dado[1] + dado[2] + dado[3] + dado[4] + dado[5] + dado[6];
         System.out.println(total);
-        System.out.println("**** RESULTAT ****");
-        System.out.println("1 -> " + dado[1] + " Probabilidad: " + dado[1] * total / 100);
-        System.out.println("2 -> " + dado[2]);
-        System.out.println("3 -> " + dado[3]);
-        System.out.println("4 -> " + dado[4]);
-        System.out.println("5 -> " + dado[5]);
-        System.out.println("6 -> " + dado[6]);
+        for (int x = 1; x < dado.length; x++) {
+            System.out.println(x + " -> " + dado[x] + " veces. Probabilidad de: " + (dado[x] * 100 / total));
+        }
     }
 
     public static void main(String[] args) {
-        probDado(10);
+        probDado(20);
     }
 }
