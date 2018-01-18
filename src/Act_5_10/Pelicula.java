@@ -29,6 +29,20 @@ public class Pelicula extends Multimedia {
         return actorPrincipal;
     }
     
+    public boolean thereIsActriz() {
+        if (actrizPrincipal == null) {
+            return false;
+        }
+        return true;
+    }
+    
+    public boolean thereIsActor() {
+        if (actorPrincipal == null) {
+            return false;
+        }
+        return true;
+    }
+    
     public String getActriz() {
         if (actorPrincipal == null) {
             return super.toString() + "\nActriz: " + actrizPrincipal;

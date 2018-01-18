@@ -72,21 +72,9 @@ public class ListaMultimedia {
         String info = "";
         for (int i = 0; i < aMultimedia.length; i++) {
             if (aMultimedia[i] != null) {
-                info += aMultimedia[i].toString() + System.lineSeparator();
+                info += aMultimedia[i].toString();
             }
         }
         return info;
-    }
-}
-
-class TestClass {
-    public static void main(String[] args) throws Exception {
-        Multimedia m1 = new Multimedia("Peli 1", "Miquel", 100, Multimedia.formatos.wav);
-        Multimedia m2 = new Multimedia("Peli 2", "Joan", 110, Multimedia.formatos.mp3);
-        
-        ListaMultimedia lista1 = new ListaMultimedia(2);
-        System.out.println("Añadido? " + lista1.add(m1) + lista1.add(m2));
-        System.out.println(lista1.indexOf(m1) + " " + lista1.indexOf(m2));
-        System.out.println(lista1.toString());
     }
 }
